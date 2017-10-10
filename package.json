@@ -1,5 +1,5 @@
 {
-  "name": "styled-primitives",
+  "name": "styled-brimitives",
   "version": "0.0.1",
   "description": "styled components wrapper for react-brimitives",
   "main": "lib/",
