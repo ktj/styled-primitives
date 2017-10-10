@@ -1,0 +1,19 @@
+{
+  "name": "styled-primitives",
+  "version": "0.0.1",
+  "description": "styled components wrapper for react-brimitives",
+  "main": "lib/",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "prepublish": "babel src/ --out-dir lib/"
+  },
+  "dependencies": {
+    "react-brimitives": "^0.4.5",
+    "styled-components": "^2.2.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1"
+  }
+}
