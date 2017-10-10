@@ -9,15 +9,13 @@ import css from 'styled-components/lib/constructors/css'
 import ThemeProvider from 'styled-components/lib/models/ThemeProvider'
 import withTheme from 'styled-components/lib/hoc/withTheme'
 
-import { Target } from 'styled-components/lib/types'
-
 const constructWithOptions = _constructWithOptions(css)
 const InlineStyle = _InlineStyle(reactPrimitives.StyleSheet)
 const StyledNativeComponent = _StyledNativeComponent(
   constructWithOptions,
   InlineStyle,
 )
-const styled = (Target) => constructWithOptions(StyledNativeComponent, tag)
+const styled = (tag) => constructWithOptions(StyledNativeComponent, tag)
 
 /* React native lazy-requires each of these modules for some reason, so let's
 *  assume it's for a good reason and not eagerly load them all */
