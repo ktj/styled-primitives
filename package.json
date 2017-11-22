@@ -1,6 +1,6 @@
 {
   "name": "styled-brimitives",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "styled components wrapper for react-brimitives",
   "main": "lib/",
   "license": "MIT",
