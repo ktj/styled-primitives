@@ -1348,9 +1348,9 @@ rc@^1.1.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-brimitives@>=0.5.1:
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/react-brimitives/-/react-brimitives-0.5.1.tgz#fdd82ca722f617a522cd8ac95c2f0eabbad4e02f"
+react-brimitives@>=0.5.2:
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/react-brimitives/-/react-brimitives-0.5.2.tgz#6ec3c611a32a63dc4995a373998258bb179e55c3"
 
 readable-stream@^2.0.2, readable-stream@^2.0.6, readable-stream@^2.1.4:
   version "2.3.3"
