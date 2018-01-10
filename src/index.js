@@ -8,6 +8,7 @@ import _constructWithOptions from 'styled-components/lib/constructors/constructW
 import css from 'styled-components/lib/constructors/css'
 import ThemeProvider from 'styled-components/lib/models/ThemeProvider'
 import withTheme from 'styled-components/lib/hoc/withTheme'
+import isStyledComponent from 'styled-components/lib/utils/isStyledComponent'
 
 const constructWithOptions = _constructWithOptions(css)
 const InlineStyle = _InlineStyle(reactPrimitives.StyleSheet)
@@ -23,13 +24,15 @@ const aliases = 'Image Text Touchable View '
 
 /* Define a getter for each alias which simply gets the reactNative component
  * and passes it to styled */
-aliases.split(/\s+/m).forEach(alias => Object.defineProperty(styled, alias, {
-  enumerable: true,
-  configurable: false,
-  get() {
-    return styled(reactPrimitives[alias])
-  },
-}))
+aliases.split(/\s+/m).forEach(alias =>
+  Object.defineProperty(styled, alias, {
+    enumerable: true,
+    configurable: false,
+    get() {
+      return styled(reactPrimitives[alias])
+    },
+  })
+)
 
-export { css, ThemeProvider, withTheme }
+export { css, isStyledComponent, ThemeProvider, withTheme }
 export default styled
