@@ -1,6 +1,6 @@
 {
   "name": "styled-brimitives",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "styled components wrapper for react-brimitives",
   "main": "lib/",
   "license": "MIT",
@@ -9,7 +9,7 @@
     "prepublish": "rm -rf lib && babel src/ --out-dir lib/"
   },
   "dependencies": {
-    "react-brimitives": ">=0.5.5",
+    "react-brimitives": ">=0.5.7",
     "styled-components": ">=2.4.0"
   },
   "devDependencies": {
